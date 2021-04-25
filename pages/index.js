@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <main className="min-h-screen bg-[#f2f2f2] overflow-hidden text-[15px] flex flex-wrap items-center justify-center">
-        <div className="mx-10 grid lg:grid-cols-3 grid-cols-1 max-w-[920px] rounded-lg overflow-hidden">
+        <div className="mx-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 max-w-[920px] rounded-lg overflow-hidden my-28">
           <CarInfo
             type="Sedans"
             primaryColor="#e38826"
