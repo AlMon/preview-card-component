@@ -10,24 +10,31 @@ export default function Home() {
       </Head>
 
       <main className="min-h-screen bg-[#f2f2f2] overflow-hidden text-[15px] flex flex-wrap items-center justify-center">
-        <div className="mx-10 grid lg:grid-cols-3 grid-cols-1 max-w-[950px] rounded-xl overflow-hidden">
+        <div className="mx-10 grid lg:grid-cols-3 grid-cols-1 max-w-[920px] rounded-lg overflow-hidden">
           <CarInfo
             type="Sedans"
             primaryColor="#e38826"
-            cardIcon={"/icon-sedans.svg"}
+            icon={"/icon-sedans.svg"}
+            description={
+              "Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip."
+            }
           />
-          <div>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            aperiam exercitationem eum nulla laudantium dicta, rerum, libero
-            minus nobis perspiciatis veritatis ut natus debitis aliquam nemo
-            quam fuga velit sed.
-          </div>
-          <div>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            aperiam exercitationem eum nulla laudantium dicta, rerum, libero
-            minus nobis perspiciatis veritatis ut natus debitis aliquam nemo
-            quam fuga velit sed.
-          </div>
+          <CarInfo
+            type="SUVs"
+            primaryColor="#006970"
+            icon={"/icon-suvs.svg"}
+            description={
+              "Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures."
+            }
+          />
+          <CarInfo
+            type="Luxury"
+            primaryColor="#004241"
+            icon={"/icon-luxury.svg"}
+            description={
+              "Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style."
+            }
+          />
         </div>
       </main>
     </div>

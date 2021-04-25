@@ -1,16 +1,17 @@
 function CarInfo(props) {
   return (
     <div
-      className="text-white px-5 pt-5"
+      className="text-[#f2f2f2] px-[49px] pt-5"
       style={{ background: `${props.primaryColor}` }}
     >
-      <img src={"props.cardIcon"} alt={props.type} />
-      <h2 className="font-display uppercase text-[40px]">{props.type}</h2>
+      <img src={props.icon} alt={`${props.type} icon`} className="mt-8 mb-7" />
+      <h2 className="font-display uppercase text-[40px] mb-5">{props.type}</h2>
+      <p className="opacity-75 leading-7 mb-6">{props.description}</p>
       <button
-        className="bg-white px-7 py-3 rounded-full"
+        className="bg-white px-8 py-[12.5px] rounded-full mt-[57.5px] mb-[50px]"
         style={{ color: `${props.primaryColor}` }}
       >
-        Learn more
+        Learn More
       </button>
     </div>
   )
